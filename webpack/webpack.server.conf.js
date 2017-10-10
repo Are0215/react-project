@@ -1,11 +1,12 @@
+let path = require('path');
 module.exports = {
     entry: './source/server.js',
     output:{
         filename:'index.js',
-        path:'/built/server/',
+        path:__dirname+'./../built/server/',
     },
     module:{
-        loaders:[
+        rules:[
             {
                 test:/\.json$/,
                 loader:'json'
