@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bff": "node ./built/server/index.js",
+    "sfs": "serve ./built/statics/ --port 3001 --cache 0"
   },
   "keywords": [],
   "author": "arodrigueze",
@@ -16,11 +17,15 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-es2017": "^6.24.1",
     "babel-preset-latest-minimal": "^1.1.2",
     "babel-preset-react": "^6.24.1",
     "json-loader": "^0.5.7",
     "react": "^15.6.2",
     "react-dom": "^15.6.2",
+    "serve": "^6.4.1",
     "webpack": "^3.6.0"
   }
 }
